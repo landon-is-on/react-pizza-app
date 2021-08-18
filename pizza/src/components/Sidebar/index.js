@@ -5,10 +5,8 @@ import { SidebarContainer,Icon,CloseIcon,SidebarMenu,SidebarLink,
 const Sidebar = ({isOpen,toggle}) => {
     return (
         <SidebarContainer isOpen={isOpen} onClick={toggle}>
-            <Icon>
-                <CloseIcon>
-
-                </CloseIcon>
+            <Icon onClick={toggle}>
+                <CloseIcon/>
             </Icon>
             <SidebarMenu>
                 <SidebarLink to="/">Pizzas</SidebarLink>
